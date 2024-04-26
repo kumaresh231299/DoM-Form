@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+    <div class="container ">
+        <div class="main">
+            <h1 id="title">Form</h1>
+            <p id="description">This form ultimate aim collecting all details from user.</p>
+            <form id="form">
+                <div class="form-group">
+                    <label for="fname">First name :</label>
+                    <input type="text" class="fname" id="first-name" placeholder="Enter your Firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last name :</label>
+                    <input type="text" class="lname" id="last-name" placeholder="Enter your Lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address :</label>
+                    <textarea id="address" placeholder="Enter your Address" rows="4" cols="50"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pincode :</label>
+                    <input type="text" placeholder="Enter your pincode" class="pincode" id="pincode" required>
+                </div>
+                <div class="form-group">
+                    Gender :
+                    <input type="radio" id="gender1" name="gender" value="Male" />
+                    <label for="gender1">Male</label>
+
+                    <input type="radio" id="gender2" name="gender" value="Female" />
+                    <label for="gender2">Female</label>
+                </div>
+                <div class="form-group">
+                    <label for="food">Choice of food :</label>
+                    <input type="checkbox" class="food" name="food[]" id="food1" value="Idly">
+                    <label for="food1">Idly</label>
+                    <input type="checkbox" class="food" name="food[]" id="food2" value="Meals">
+                    <label for="food2">Meals</label>
+                    <input type="checkbox" class="food" name="food[]" id="food3" value="Biriyani">
+                    <label for="food3">Biriyani</label>
+                    <input type="checkbox" class="food" name="food[]" id="food4" value="Parota">
+                    <label for="food4">parota</label>
+                    <input type="checkbox" class="food" name="food[]" id="food5" value="Puri">
+                    <label for="food5">Puri</label>
+                </div>
+                <div class="form-group">
+                    <label for="state">Select your state :</label>
+                    <select name="state" id="state">
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Andhara">Andhara</option>
+                        <option value="Telugana">Telugana</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="country">Select your country :</label>
+                    <select name="country" id="country">
+                        <option value="Srilanka">Sri Lanka</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Korea">Korea</option>
+                        <option value="India">India</option>
+                        <option value="Thailand">Thailand</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="section">
+            <h3>Your Details here</h3>
+            <table id="myTable" class="table" border="3">
+                <thead>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
