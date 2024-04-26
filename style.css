@@ -1,68 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+
 .main {
-    background-color: #f2f2f2;
-    margin:20px;
-    padding: 20px;
-    border: 1px solid #c7c6c6;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .section {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #c7c6c6;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-h1{
-    display: flex;
-    justify-content: center;
+  background-color: #f2f2f2;
+  margin: 50px 20px 20px 20px;
+  padding: 20px;
+  border: 1px solid #c7c6c6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-p{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+.section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0px 20px 20px 20px;
+  border: 1px solid #c7c6c6;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
 }
-input , textarea {
-    padding: 5px;
+h1 {
+  display: flex;
+  justify-content: center;
 }
-.form-group{
-    padding: 5px;
+p {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
-.fname , .lname , #address , .pincode , #state , #country{
+input,
+textarea {
+  padding: 5px;
+}
+.form-group {
+  padding: 5px;
+}
+.fname,
+.lname,
+#address,
+.pincode,
+#state,
+#country {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  padding: 5px;
+  border: solid;
+  border-radius: 5px;
+  background-color: rgb(80, 143, 80);
+  color: white;
+}
+button:hover {
+  background-color: green;
+  font-size: large;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+th {
+  padding: 5px;
+}
+
+td {
+  padding: 5px;
+}
+
+.table{
     width: 100%;
-}
-
-button{
-    width: 100%;
-    padding: 5px;
-    border: solid;
-    border-radius: 5px;
-    background-color: rgb(80, 143, 80);
-    color: white;
-}
-button:hover{
-    background-color: green;
-    font-size: large;
-}
-
-h3{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-th{
-    padding: 5px;
-}
-
-td{
-    padding: 5px;
 }

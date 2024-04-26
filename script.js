@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //
             if (checkedValue.length > 1) {
                 myFunction(fname, lname, address, pincode, gender, checkedValue, state, country);
+                document.getElementById("form").reset();
             } else {
                 alert("check food list minimum 2 selected requried")
             }
